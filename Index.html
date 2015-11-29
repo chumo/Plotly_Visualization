@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding"> -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Plotly visualization template">
+  <meta name="keywords" content="d3, d3.js, visualization, plotly, dashboard">
+  <meta name="author" content="Jesús Martínez-Blanco">
+
+  <title>Plotly visualization template</title>
+
+  <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />-->
+  <link href="css/chumo.css" rel="stylesheet">
+  <script src="lib/d3.min.js"></script>
+  <script src="lib/plotly-latest.min.js"></script>
+</head>
+
+
+<body style='text-align:center'>
+
+  <div id='title'>
+    This is an interactive plot
+  </div>
+
+  <div id='container'>
+  </div>
+
+  <div id='panel'>
+    <p>
+      <button id='loadData' type='button' onclick='loadData()'>RELOAD DATA</button>
+    </p>
+    <p>
+      <label for="x_coord">
+        x coordinate =
+      </label>
+      <select id="x_coord" onchange="changePlot()">
+        <option value="x1">x coord 1</option>
+        <option value="x2">x coord 2</option>
+        <option value="x3">x coord 3</option>
+      </select>
+    </p>
+    <p>
+      <label for="y_coord">
+        y coordinate =
+      </label>
+      <select id="y_coord" onchange="changePlot()">
+        <option value="y1">y coord 1</option>
+        <option value="y2">y coord 2</option>
+        <option value="y3">y coord 3</option>
+      </select>
+    </p>
+  </div>
+
+  <div id='logo'>
+    <img src='images/logo.png' alt='logo' width='200px'>
+  </div>
+
+  <script src="js/Script.js"></script>
+
+</body>
+
+</html>
